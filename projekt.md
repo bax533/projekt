@@ -216,7 +216,7 @@ Dodaje informację o nowym locie z następującymi parametrami:
 Dla początkowego lotniska podana jest wyłącznie informacja o czasie startu, a dla docelowego - wyłącznie o czasie lądowania, dla międzylądowań podane są zawsze oba te parametry. Tablica zawiera co najmniej dwa obiekty - opisy początkowego i docelowego lotniska. Kolejność obiektów w tablicy ma znaczenie. 
 Wszystkie lotniska w ramach każdego lotu są parami różne.
 
-// nie zwraca krotek, 
+// nie zwraca krotek
 
 ###### list_flights
 
@@ -228,7 +228,7 @@ Dla każdego segmentu zwróć identyfikator jego lotu `<rid>`, kod IATA lotniska
 
 Nie jest wykluczone, że w wynikach znajdą się różne segmenty tego samego lotu.
 
-Atrybuty zwracanej krotek:
+Atrybuty zwracanych krotek:
 ```
 // <rid> <from> <to> <takeoff_time>
 ```
@@ -238,6 +238,8 @@ Atrybuty zwracanej krotek:
 list_cities <id> <dist>
 ```
 Zwraca listę miast położonych bliżej niż `dist` km od trasy lotu `id` posortowaną wg nazwy miasta rosnąco.
+
+Atrybuty zwracanych krotek:
 ```
 // <name> <prov> <country>
 ```
@@ -247,10 +249,9 @@ Zwraca listę miast położonych bliżej niż `dist` km od trasy lotu `id` poso
 list_airport <iatacode> <n>
 ```
 
-Zwraca identyfikatory `n` ostatnich (wg `<takeoff_time>`) lotów startujących z lotniska `<iatacode>` posortowaną wg `<takeoff_time>` zaczynając od najnowszego (tj. malejąco), w drugiej kolejności wg `<id>` rosnąco. Lotnisko `<iatacode>` może być zarówno lotniskiem początkowym jak i lotniskiem międzylądowania dla zwracanych lotów. Sortując uwzględnij `<takeoff_time>` danego segmentu lotu.
+Zwraca identyfikatory `n` ostatnich (wg `<ta// nie zwraca krotek
 
-
-Atrybuty zwracanej krotek:
+Atrybuty zwracanych krotek:
 ```
 // <id>
 ```
@@ -264,6 +265,7 @@ Znajduje `<n>` ostatnich (wg `<takeoff_time>`) lotów przelatujących bliżej ni
 Dla każdego lotu zwraca jego identyfikator `<rid>` oraz minimalną odległość od centrum miasta `<mdist>`.
 Każde `<rid>` wypisz co najwyżej raz. Sortując uwzględnij odpowiedni `<takeoff_time>` dla tego segmentu lotu `<rid>`, w którym osiągana jest `<mdist>`.
 
+Atrybuty zwracanych krotek:
 ```
 // <rid> <mdist>
 ```
