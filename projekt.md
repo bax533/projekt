@@ -249,7 +249,8 @@ Atrybuty zwracanych krotek:
 list_airport <iatacode> <n>
 ```
 
-Zwraca identyfikatory `n` ostatnich (wg `<ta// nie zwraca krotek
+Zwraca identyfikatory `n` ostatnich (wg `<takeoff_time>`) lotów startujących z lotniska `<iatacode>` posortowaną wg `<takeoff_time>` zaczynając od najnowszego (tj. malejąco), w drugiej kolejności wg `<id>` rosnąco. Lotnisko `<iatacode>` może być zarówno lotniskiem początkowym jak i lotniskiem międzylądowania dla zwracanych lotów. Sortując uwzględnij `<takeoff_time>` danego segmentu lotu.
+
 
 Atrybuty zwracanych krotek:
 ```
@@ -264,6 +265,7 @@ list_city <name> <prov> <country> <n> <dist>
 Znajduje `<n>` ostatnich (wg `<takeoff_time>`) lotów przelatujących bliżej niz `dist` km od centrum miasta wyznaczonego przez `<name>, <prov>, <country>`, posortowaną wg `<takeoff_time>` zaczynając od najnowszego (tj. malejąco), w drugiej kolejności wg `<rid>` rosnąco. 
 Dla każdego lotu zwraca jego identyfikator `<rid>` oraz minimalną odległość od centrum miasta `<mdist>`.
 Każde `<rid>` wypisz co najwyżej raz. Sortując uwzględnij odpowiedni `<takeoff_time>` dla tego segmentu lotu `<rid>`, w którym osiągana jest `<mdist>`.
+
 
 Atrybuty zwracanych krotek:
 ```
