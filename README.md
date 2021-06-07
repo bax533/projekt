@@ -28,5 +28,6 @@ Program - oceniany będzie kod źródłowy oraz poprawność i efektywność dzi
 
 Oddajemy archiwum zawierające wszystkie pliki źródłowe programu, model konceptualny w pliku pdf oraz model fizyczny w pliku sql. Plik README powinien zawierać instrukcję w jaki sposób uruchomić system.
 
-Aby uzyskać ocenę projektu należy się umówić na rozmowę z prowadzącym ćwiczenia (linki do umawiania terminów pojawią się poniżej).
+Aby uzyskać ocenę projektu należy się umówić na rozmowę z prowadzącym ćwiczenia (linki do umawiania terminów pojawią się poniżej):
+- [PWI](https://skos.ii.uni.wroc.pl/mod/choice/view.php?id=23542)
 
