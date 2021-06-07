@@ -168,13 +168,34 @@ Pierwsze uruchomienie (z parametrem `--init`): wejście puste (pusty plik).
 
 ###### Kolejne uruchomienie:
 ```
-{"function":"flight", "params":{"id":"12345", "airports":[{"airport":"WAW","takeoff_time":"2021-06-01 20:26:44.229109+02"},{"airport":"WRO","takeoff_time":"2021-06-01 21:46:44.229109+02", "landing_time":"2021-06-01 21:26:44.229109+02"}, {"airport":"GDA", "landing_time":"2021-06-01 22:46:44.229109+02"}]}}
+{"function":"flight", "params":{"id":"12345", "airports":[{"airport":"WAW","takeoff_time":"2021-06-01 20:26:44.229109+02"},{"airport":"WRO","takeoff_time":"2021-06-01 21:46:44.229109+02", "landing_time":"2021-06-01 21:26:44.229109+02"}, {"airport":"GDN", "landing_time":"2021-06-01 22:46:44.229109+02"}]}}
+{"function":"list_flights", "params":{"id":"12345"}}
+{"function":"flight", "params":{"id":"12346", "airports":[{"airport":"KTW","takeoff_time":"2021-06-02 12:00:00.229109+02"},{"airport":"POZ", "landing_time":"2021-06-01 13:00:00.229109+02"}]}}
+{"function":"list_flights", "params":{"id":"12346"}}
 ```
 
 ###### Oczekiwane wyjście (dla czytelności zawiera znaki nowej linii)
 ```
 {"status": "OK"}
-```
+{"status": "OK", "data": []}
+{"status": "OK"}
+{
+   "status":"OK",
+   "data":[
+      {
+         "rid":"12345",
+         "from":"WRO",
+         "to":"GDN",
+         "takeoff_time":"2021-06-01 21:46:44.229109+02"
+      },
+      {
+         "rid":"12345",
+         "from":"WAW",
+         "to":"WRO",
+         "takeoff_time":"2021-06-01 20:26:44.229109+02"
+      }
+   ]
+}```
 
 ## Format opisu API
 
