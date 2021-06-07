@@ -41,6 +41,9 @@ SELECT ST_Distance('LINESTRING(-122.33 47.606, 0.0 51.5)'::geography, 'POINT(-21
  122.23523815667001
 (1 row)
 
+-- minimalna odległość pomiędzy trasą WRO -> GDN i KTW -> KRK
+SELECT ST_Distance('LINESTRING(16.89 51.1, 18.47 54.38)'::geography, 'LINESTRING(19.1 50.5, 19.8 50.08)'::geography)/1000 as distance;
+
 
 create table tab (name text, geog geography);
 
@@ -247,7 +250,7 @@ list_flights <id>
 Zwraca dane wszystkich segmentów lotów takich, że najmniejsza odległość pomiędzy trasą tego segmentu, a trasą dowolnego segmentu lotu `<id>` wynosi 0.
 Dla każdego segmentu zwróć identyfikator jego lotu `<rid>`, kod IATA lotniska startu `<from>` oraz lotniska lądowania `<to>`, a także `<takeoff_time>` lotniska startu danego segmentu. Lista powinna być posortowana wg `<takeoff_time>` malejąco, w drugiej kolejności wg `<rid>` rosnąco.
 
-Nie jest wykluczone, że w wynikach znajdą się różne segmenty tego samego lotu.
+Nie jest wykluczone, że w wynikach znajdą się różne segmenty tego samego lotu. Nie należy zwracać żadnego z segmentów lotu o `<id>` podanym na wejściu.
 
 Atrybuty zwracanych krotek:
 ```
