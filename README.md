@@ -11,12 +11,12 @@ Jak używać git-a oraz github-a można nauczyć się tutaj: https://guides.gith
 Projekty należy przygotować indywidualnie wg następującej specyfikacji: https://github.com/ii-bazy/projekt/blob/master/projekt.md
 
 Praca nad projektem będzie odbywać się poprzez repozytorium github, które zostanie dla Was utworzone po kliknięciu w następujący link:
-- MPY: 
-- PGA: 
-- PLG: 
-- PWI:
-- PPO: 
-- MABI: https://classroom.github.com/
+- MABI: https://classroom.github.com/a/_5RzWuK_
+- MPY: https://classroom.github.com/a/koXSv4jy
+- PGA: https://classroom.github.com/a/oc8rHu8F
+- PLG: https://classroom.github.com/a/mL4FQCsX
+- PPO: https://classroom.github.com/a/u8_Rwfx1
+- PWI: https://classroom.github.com/a/qXZ_B_B5
 
 Co będzie oceniane?
 
