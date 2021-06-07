@@ -26,7 +26,7 @@ Model fizyczny - powinien być plikiem sql nadającym się do czytania (i oceny)
 
 Program - oceniany będzie kod źródłowy oraz poprawność i efektywność działania.
 
-Oceniemy podlegają pliki źródłowe programu, model konceptualny w pliku pdf oraz model fizyczny w pliku sql. Plik README powinien zawierać instrukcję w jaki sposób uruchomić system.
+Ocenie podlegają pliki źródłowe programu, model konceptualny w pliku pdf oraz model fizyczny w pliku sql. Plik README powinien zawierać instrukcję w jaki sposób uruchomić system.
 
 Aby uzyskać ocenę projektu należy się umówić na rozmowę z prowadzącym ćwiczenia (linki do umawiania terminów pojawią się poniżej):
 - [PWI](https://skos.ii.uni.wroc.pl/mod/choice/view.php?id=23542)
