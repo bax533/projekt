@@ -10,7 +10,7 @@ Jak używać git-a oraz github-a można nauczyć się tutaj: https://guides.gith
 
 Projekty należy przygotować indywidualnie wg następującej specyfikacji: https://github.com/ii-bazy/projekt/blob/master/projekt.md
 
-Praca nad projektem będzie odbywać się poprzez repozytorium github, które zostanie dla Was utworzone po kliknięciu w następujący link:
+Praca nad projektem będzie odbywać się poprzez repozytorium github, które zostanie dla Was utworzone po kliknięciu w przygotowany dla danej grupy link:
 - [MABI](https://classroom.github.com/a/_5RzWuK_)
 - [MPY](https://classroom.github.com/a/koXSv4jy)
 - [PGA](https://classroom.github.com/a/oc8rHu8F)
@@ -28,4 +28,5 @@ Program - oceniany będzie kod źródłowy oraz poprawność i efektywność dzi
 
 Oddajemy archiwum zawierające wszystkie pliki źródłowe programu, model konceptualny w pliku pdf oraz model fizyczny w pliku sql. Plik README powinien zawierać instrukcję w jaki sposób uruchomić system.
 
-Aby uzyskać ocenę projektu należy się umówić na rozmowę z prowadzącym ćwiczenia.
+Aby uzyskać ocenę projektu należy się umówić na rozmowę z prowadzącym ćwiczenia (linki do umawiania terminów pojawią się poniżej).
+
