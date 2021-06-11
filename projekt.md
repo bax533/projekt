@@ -82,11 +82,11 @@ SELECT ST_AsText(('SRID=4326;POINT(' || longitude::text || ' ' || latitude::text
 ## Punktacja
 
 Maksymalna liczba punktów: **100 pkt.**.
-Rozwiązania bez modelu konceptualnego lub poprawnej implementacji funkcji `flights` oraz `list_flights` otrzymują 0 punktów.
+Rozwiązania bez modelu konceptualnego lub poprawnej implementacji funkcji `flight` oraz `list_flights` otrzymują 0 punktów.
 
 Punktacja:
 - Przygotowanie modelu konceptualnego: **20 pkt.** (obowiązkowo)
-- Implementacja funkcji `flights` oraz `list_flights`  po **20 pkt.** (obowiązkowo).
+- Implementacja funkcji `flight` oraz `list_flights`  po **20 pkt.** (obowiązkowo).
 - Implementacja pozostałych funkcji  **po 10 pkt**.
 - Odpowiednie indeksowanie wyszukiwań: **10 pkt.** 
 
@@ -198,7 +198,8 @@ Pierwsze uruchomienie (z parametrem `--init`): wejście puste (pusty plik).
          "takeoff_time":"2021-06-01 20:26:44.229109+02"
       }
    ]
-}```
+}
+```
 
 ## Format opisu API
 
