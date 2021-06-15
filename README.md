@@ -31,4 +31,5 @@ Ocenie podlegają pliki źródłowe programu, model konceptualny w pliku pdf ora
 Aby uzyskać ocenę projektu należy się umówić na rozmowę z prowadzącym ćwiczenia (linki do umawiania terminów pojawią się poniżej):
 - [PWI](https://skos.ii.uni.wroc.pl/mod/choice/view.php?id=23542)
 - [PLG](https://doodle.com/poll/ricdsqzwtav7kya9)
+- [MABI](https://skos.ii.uni.wroc.pl/mod/choice/view.php?id=23605)
 
