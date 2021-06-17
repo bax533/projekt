@@ -140,7 +140,7 @@ Obiekt (dla uproszczenia sformatowany w wielu liniach):
             "landing_time":"2021-06-01 21:26:44.229109+02"
          },
          {
-            "airport":"GDA",
+            "airport":"GDN",
             "landing_time":"2021-06-01 22:46:44.229109+02"
          }
       ]
