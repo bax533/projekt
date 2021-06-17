@@ -17,7 +17,7 @@ System Linux. Język programowania - python. Baza danych – PostgreSQL. Testy p
 
 ##  Przechowywanie danych geograficznych
 
-Użyj rozszerzenia PostGIS, długość i szerokość geograficzną przechowuj z użyciem typu `geography` używając [WGS84 — SRID 4326](https://en.wikipedia.org/wiki/World_Geodetic_System#WGS84). Pamiętaj w opisie punktów podaje się długość przed szerokością geograficzną: `POINT(51.107883 17.038538)` (Jemen) vs. `POINT(17.038538 51.107883)` (Wrocław). Użyj odpowiedniego indeksu. 
+Użyj rozszerzenia PostGIS, wszelkie obliczenia dotyczące długości i szerokości geograficznej wykonuj z użyciem typu `geography` używając [WGS84 — SRID 4326](https://en.wikipedia.org/wiki/World_Geodetic_System#WGS84). Pamiętaj w opisie punktów podaje się długość przed szerokością geograficzną: `POINT(51.107883 17.038538)` (Jemen) vs. `POINT(17.038538 51.107883)` (Wrocław). Użyj odpowiedniego indeksu. 
 
 [Dokumentacja PostGIS 3.0 - typ geography](https://postgis.net/docs/manual-3.0/using_postgis_dbmanagement.html#PostGIS_Geography)
 
