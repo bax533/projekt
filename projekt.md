@@ -2,14 +2,10 @@
 
 Twoim zadaniem jest zaimplementowanie zdefiniowanego poniżej API.
 
-Ze względu na to, że interesuje nas przede wszystkim tematyka baz danych kolejne wywołania funkcji API należy wczytywać ze standardowego wejścia, a wyniki zapisywać na standardowe wyjście.
-
 ## Opis systemu
 
 Napisz prosty system umożliwiający śledzenie lotów i korzystający z funkcji geograficznych oferowanych przez bibliotekę PostGIS.
-Dokładny opis funkcji API do zaimplementowania znajduje się poniżej.
-
-W bazie danych dostępne będą tabele `city` oraz `airport` z bazy `mondial`. 
+Dokładny opis funkcji API do zaimplementowania znajduje się w końcowej części dokumentu.
 
 ## Technologie
 
@@ -79,21 +75,10 @@ SELECT ST_AsText(('SRID=4326;POINT(' || longitude::text || ' ' || latitude::text
 --------------------
  POINT(21.02 52.23)
 ```
-## Punktacja
-
-Maksymalna liczba punktów: **100 pkt.**.
-Rozwiązania bez modelu konceptualnego lub poprawnej implementacji funkcji `flight` oraz `list_flights` otrzymują 0 punktów.
-
-Punktacja:
-- Przygotowanie modelu konceptualnego: **20 pkt.** (obowiązkowo)
-- Implementacja funkcji `flight` oraz `list_flights`  po **20 pkt.** (obowiązkowo).
-- Implementacja pozostałych funkcji  **po 10 pkt**.
-- Odpowiednie indeksowanie wyszukiwań: **10 pkt.** 
 
 ## Implementacja
 
-Twój program po uruchomieniu powinien przeczytać ze standardowego wejścia ciąg wywołań funkcji API, a wyniki ich działania wypisać na standardowe wyjście.
-
+Ze względu na to, że interesuje nas przede wszystkim tematyka baz danych kolejne wywołania funkcji API należy wczytywać ze standardowego wejścia, a wyniki zapisywać na standardowe wyjście.
 Wszystkie dane powinny być przechowywane w bazie danych, efekt działania każdej funkcji modyfikującej bazę, dla której wypisano potwierdzenie wykonania (wartość OK) powinien być utrwalony. 
 **Dane dostępowe do bazy danych**: baza danych: `student`, login: `app`, password: `qwerty`.
 
@@ -115,7 +100,6 @@ Wejście zawiera wywołania kolejnych funkcji API.
 - Baza nie będzie modyfikowana pomiędzy kolejnymi uruchomieniami.
 - Program nie będzie miał praw do tworzenia i zapisywania jakichkolwiek plików. 
 - Program będzie mógł czytać pliki z bieżącego katalogu (np. dołączony do rozwiązania studenta plik .sql zawierający polecenia tworzące niezbędne elementy bazy).
-- Wszystkie wypisywane odległości powinny być zaookrąglone do pełnego kilometra (funkcja `round`).
 
 ## Format wejścia
 
@@ -162,7 +146,8 @@ Dopuszczalne jest dodatkowe pole o kluczu `debug` i wartości typu `string` z ew
 
 ## Przykładowe wejście i wyjście
 
-Pierwsze uruchomienie (z parametrem `--init`): wejście puste (pusty plik).
+###### Pierwsze uruchomienie (z parametrem `--init`)
+wejście puste (pusty plik).
 
 ###### Oczekiwane wyjście
 ```
@@ -289,10 +274,20 @@ list_city <name> <prov> <country> <n> <dist>
 ```
 Znajduje `<n>` ostatnich (wg `<takeoff_time>`) lotów przelatujących bliżej niz `dist` km od centrum miasta wyznaczonego przez `<name>, <prov>, <country>`, posortowaną wg `<takeoff_time>` zaczynając od najnowszego (tj. malejąco), w drugiej kolejności wg `<rid>` rosnąco. 
 Dla każdego lotu zwraca jego identyfikator `<rid>` oraz minimalną odległość od centrum miasta `<mdist>`.
-Każde `<rid>` wypisz co najwyżej raz. Sortując uwzględnij odpowiedni `<takeoff_time>` dla tego segmentu lotu `<rid>`, w którym osiągana jest `<mdist>`.
-
+Każde `<rid>` wypisz co najwyżej raz. Sortując uwzględnij odpowiedni `<takeoff_time>` dla tego segmentu lotu `<rid>`, w którym osiągana jest `<mdist>`. Zwracane odległości powinny być zaokrąglone do pełnego kilometra (funkcja `round`).
 
 Atrybuty zwracanych krotek:
 ```
 // <rid> <mdist>
 ```
+
+## Punktacja
+
+Maksymalna liczba punktów: **100 pkt.**.
+Rozwiązania bez modelu konceptualnego lub poprawnej implementacji funkcji `flight` oraz `list_flights` otrzymują 0 punktów.
+
+Punktacja:
+- Przygotowanie modelu konceptualnego: **20 pkt.** (obowiązkowo)
+- Implementacja funkcji `flight` oraz `list_flights`  po **20 pkt.** (obowiązkowo).
+- Implementacja pozostałych funkcji  **po 10 pkt**.
+- Odpowiednie indeksowanie wyszukiwań: **10 pkt.** 
